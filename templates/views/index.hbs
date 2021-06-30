@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/weather.css">
+    <link rel="icon" href="./img/weather.png">
+    <title>Weather Project</title>
+</head>
+<body>
+    <div class="main-content">
+         {{>header}}
+         <p>Use this app to get the weather!</p>
+         <form>
+             <input type="text" placeholder="Location">
+             <button>Search</button>
+         </form>
+         <p id="p1"></p>
+         <p id="p2"></p>
+    </div>
+   
+
+    {{>footer}}
+    <script src="./js/weather.js"></script>
+</body>
+</html>
