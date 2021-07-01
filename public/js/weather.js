@@ -1,6 +1,5 @@
 const weatherForm = document.querySelector("form");
 const searchInput = document.querySelector("input");
-const localHostUrl = "http://localhost:4000/";
 const p1 = document.getElementById("p1");
 const p2 = document.getElementById("p2");
 
