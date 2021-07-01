@@ -17,7 +17,7 @@ weatherForm.addEventListener("submit", (event) => {
                         return p1.innerHTML = data.error + " Try another search.";
                     }
                     p1.innerHTML = data.response.location;
-                    p2.innerHTML = data.response.description;
+                    p2.innerHTML = data.response.message;
                 })
         })
 })

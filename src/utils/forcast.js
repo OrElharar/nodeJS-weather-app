@@ -11,12 +11,12 @@ const forcast = (longitude, latitude, callback) => {
                 callback("Invalid given cordinates.", null)
             } else {
                 const temp = response.body.current.temperature;
-                const precip = response.body.current.precip
+                const feelsLikeTemp = response.body.current.feelslike;
+                const precip = response.body.current.precip;
                 const description = response.body.current.weather_descriptions[0];
+                const message = `${description} - The temprature is ${temp}, but it feels like ${feelsLikeTemp}.`
                 callback(null, {
-                    temp,
-                    precip,
-                    description
+                    message
                 })
             }
         }
