@@ -12,9 +12,9 @@ const forcast = (longitude, latitude, callback) => {
             } else {
                 const temp = response.body.current.temperature;
                 const feelsLikeTemp = response.body.current.feelslike;
-                const precip = response.body.current.precip;
+                const humidity = response.body.current.humidity;
                 const description = response.body.current.weather_descriptions[0];
-                const message = `${description} - The temprature is ${temp}, but it feels like ${feelsLikeTemp}.`
+                const message = `${description} - The temprature is ${temp} which feels like ${feelsLikeTemp}, and the humidity is ${humidity}%.`
                 callback(null, {
                     message
                 })
