@@ -9,7 +9,7 @@ weatherForm.addEventListener("submit", (event) => {
     p2.innerHTML = "";
     const location = searchInput.value;
 
-    fetch("/weather?address=" + location)
+    fetch("./weather?address=" + location)
         .then((response) => {
             response.json()
                 .then((data) => {
